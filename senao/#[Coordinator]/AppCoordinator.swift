@@ -31,8 +31,15 @@ class AppCoordinator: NSObject {
 }
 
 extension AppCoordinator: ProductListViewControllerDelegate {
-    func productListViewControllerDidSelectTable() {
+    func productListViewControllerDidSelectTableViewCell() {
         productDetailVC = mainStoryBorad.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController
+        productDetailVC.delegate = self
         mainNavc.pushViewController(productDetailVC, animated: true)
+    }
+}
+
+extension AppCoordinator: ProductDetailViewControllerDelegate {
+    func productDetailViewControllerShouldTurnBack() {
+        mainNavc.popViewController(animated: true)
     }
 }

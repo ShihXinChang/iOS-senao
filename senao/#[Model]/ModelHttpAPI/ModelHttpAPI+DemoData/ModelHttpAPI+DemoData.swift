@@ -25,6 +25,7 @@ extension ModelHttpAPI {
                     
                     observer.onNext(())
                     observer.onCompleted()
+                    
                     // MARK: 特殊動作
                     /// 資料處理
                     ProductInfoManager.shared.updateResDemoData(resDemoData: response)

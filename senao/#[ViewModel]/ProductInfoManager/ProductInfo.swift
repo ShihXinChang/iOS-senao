@@ -11,14 +11,17 @@ import Foundation
     /// 圖片網址
     private(set) var imageURL: String = ""
 
-    /// 價格 (Int -> String format $XX,XXX)
-    private(set) var finalPrice: String = "" // int -> $39,950
-    
+    /// 價格（無格式）
+    private(set) var price: String = "" // int -> $39,950
+
+    /// 價格（錢格式 $XX,XXX）
+    private(set) var price_moneyFormat: String = ""
+
     /// 商品名稱
-    private(set) var martName: String = ""
+    private(set) var name: String = ""
     
-    /// 商品編號 (商品編號：XXXXX)
-    private(set) var martId: String = ""
+    /// 商品編號（商品編號：XXXXX）
+    private(set) var idNumber: String = ""
     
     init(dataDetail: DataDetail?) {
         super.init()
@@ -29,11 +32,12 @@ import Foundation
         
         imageURL = dataDetail.imageUrl ?? ""
         
-        finalPrice = (dataDetail.finalPrice != nil) ? "\(dataDetail.finalPrice!)" : ""
+        price = (dataDetail.finalPrice != nil) ? "\(dataDetail.finalPrice!)" : ""
+        price_moneyFormat = price.Convert_To_MoneyFormat()
         
-        martName = dataDetail.martName ?? ""
+        name = dataDetail.martName ?? ""
         
-        martId = (dataDetail.martId != nil) ? "商品編號：\(dataDetail.martId!)" : "商品編號：無"
+        idNumber = (dataDetail.martId != nil) ? "商品編號：\(dataDetail.martId!)" : "商品編號：無"
     }
     
 }

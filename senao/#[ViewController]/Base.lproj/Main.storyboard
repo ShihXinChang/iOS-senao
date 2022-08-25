@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4DT-zj-kMc">
                                 <rect key="frame" x="10" y="98" width="394" height="526.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kVa-tS-gcx">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="kVa-tS-gcx">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="394"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kVa-tS-gcx" secondAttribute="height" multiplier="1:1" id="4Rh-IP-IV8"/>
@@ -50,7 +50,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jvC-Zh-YnS">
                                                 <rect key="frame" x="320" y="0.0" width="74" height="32"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EI-Ye-80t" userLabel="favoriteButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EI-Ye-80t" userLabel="favoriteButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="6EI-Ye-80t" secondAttribute="height" multiplier="1:1" id="7jR-gZ-igN"/>
@@ -59,7 +59,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="icon-favorite"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-Qo-99o" userLabel="shoppingCartButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-Qo-99o" userLabel="shoppingCartButton">
                                                         <rect key="frame" x="42" y="0.0" width="32" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fZr-Qo-99o" secondAttribute="height" multiplier="1:1" id="KHG-80-ZQ6"/>
@@ -104,11 +104,18 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o7F-3i-IpJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <navigationBarAppearance key="standardAppearance">
                             <color key="backgroundColor" name="AccentColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
                         </navigationBarAppearance>
                         <navigationBarAppearance key="scrollEdgeAppearance">
                             <color key="backgroundColor" name="AccentColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
                         </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -157,7 +164,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vya-TT-e5W">
                                                             <rect key="frame" x="310" y="108" width="74" height="32"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vE-gj-L6D" userLabel="favoriteButton">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vE-gj-L6D" userLabel="favoriteButton">
                                                                     <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="32" id="UtI-w6-kAg"/>
@@ -166,7 +173,7 @@
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="icon-favorite"/>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guo-Y1-RlV" userLabel="shoppingCartButton">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guo-Y1-RlV" userLabel="shoppingCartButton">
                                                                     <rect key="frame" x="42" y="0.0" width="32" height="32"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="32" id="928-W4-Tmi"/>
@@ -231,7 +238,7 @@
                             <constraint firstItem="Jbg-GE-yh5" firstAttribute="bottom" secondItem="0tO-dd-e24" secondAttribute="bottom" id="tYd-61-Pb5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jZB-4O-WT7"/>
+                    <navigationItem key="navigationItem" title="搜尋" id="jZB-4O-WT7"/>
                     <connections>
                         <outlet property="tableView" destination="0tO-dd-e24" id="21Q-9v-nxz"/>
                         <segue destination="Tu9-Ua-qXm" kind="show" id="X4T-Dd-ERr"/>

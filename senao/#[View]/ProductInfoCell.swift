@@ -39,8 +39,8 @@ class ProductInfoCell: UITableViewCell {
             }
             
             productImageView.sd_setImage(with: URL(string: item.imageURL), placeholderImage: UIImage(named: "defaultImage"))
-            nameLabel.text = item.martName
-            priceLabel.text = item.finalPrice
+            nameLabel.text = item.name
+            priceLabel.text = item.price_moneyFormat
         }
     }
 }

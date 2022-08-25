@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AA131F7728B475BF00D00E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA131F7628B475BF00D00E6E /* AppDelegate.swift */; };
 		AA131F7928B475BF00D00E6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA131F7828B475BF00D00E6E /* SceneDelegate.swift */; };
-		AA131F7B28B475BF00D00E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA131F7A28B475BF00D00E6E /* ViewController.swift */; };
 		AA131F7E28B475BF00D00E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA131F7C28B475BF00D00E6E /* Main.storyboard */; };
 		AA131F8028B475C100D00E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA131F7F28B475C100D00E6E /* Assets.xcassets */; };
 		AA131F8328B475C100D00E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA131F8128B475C100D00E6E /* LaunchScreen.storyboard */; };
@@ -33,6 +32,8 @@
 		AA8FF18B28B63127001CCA38 /* ProductInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FF18A28B63127001CCA38 /* ProductInfoCell.swift */; };
 		AA8FF18D28B63230001CCA38 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FF18C28B63230001CCA38 /* ProductDetailViewController.swift */; };
 		AA8FF18F28B632EF001CCA38 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FF18E28B632EF001CCA38 /* AppCoordinator.swift */; };
+		AA8FF19228B722A5001CCA38 /* String+NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FF19128B722A5001CCA38 /* String+NumberFormatter.swift */; };
+		AA8FF19828B754D1001CCA38 /* MJRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = AA8FF19728B754D1001CCA38 /* MJRefresh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,6 @@
 		AA131F7328B475BF00D00E6E /* senao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = senao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA131F7628B475BF00D00E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA131F7828B475BF00D00E6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA131F7A28B475BF00D00E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA131F7D28B475BF00D00E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA131F7F28B475C100D00E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA131F8228B475C100D00E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +78,7 @@
 		AA8FF18A28B63127001CCA38 /* ProductInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoCell.swift; sourceTree = "<group>"; };
 		AA8FF18C28B63230001CCA38 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		AA8FF18E28B632EF001CCA38 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AA8FF19128B722A5001CCA38 /* String+NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+NumberFormatter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8FF18328B62FDB001CCA38 /* RxCocoa in Frameworks */,
+				AA8FF19828B754D1001CCA38 /* MJRefresh in Frameworks */,
 				AA8FF17528B624E9001CCA38 /* SDWebImage in Frameworks */,
 				AA8FF18728B62FDB001CCA38 /* RxSwift in Frameworks */,
 				AA8FF18528B62FDB001CCA38 /* RxRelay in Frameworks */,
@@ -135,7 +137,6 @@
 			children = (
 				AA131F7628B475BF00D00E6E /* AppDelegate.swift */,
 				AA131F7828B475BF00D00E6E /* SceneDelegate.swift */,
-				AA131F7A28B475BF00D00E6E /* ViewController.swift */,
 				AA131F8128B475C100D00E6E /* LaunchScreen.storyboard */,
 				AA48D7CE28B5D89A0067F1FE /* #[Coordinator] */,
 				AA48D7DE28B5E4810067F1FE /* #[ViewController] */,
@@ -203,6 +204,7 @@
 		AA48D7DD28B5DFDC0067F1FE /* #[Tool] */ = {
 			isa = PBXGroup;
 			children = (
+				AA8FF19028B72223001CCA38 /* ##[FoundationTool] */,
 				AA8FF16328B62016001CCA38 /* ##[SPMTool] */,
 				AA8FF16028B61FBA001CCA38 /* ##[DebugTool] */,
 			);
@@ -269,6 +271,14 @@
 			path = ProductInfoManager;
 			sourceTree = "<group>";
 		};
+		AA8FF19028B72223001CCA38 /* ##[FoundationTool] */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FF19128B722A5001CCA38 /* String+NumberFormatter.swift */,
+			);
+			path = "##[FoundationTool]";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +301,7 @@
 				AA8FF18228B62FDB001CCA38 /* RxCocoa */,
 				AA8FF18428B62FDB001CCA38 /* RxRelay */,
 				AA8FF18628B62FDB001CCA38 /* RxSwift */,
+				AA8FF19728B754D1001CCA38 /* MJRefresh */,
 			);
 			productName = senao;
 			productReference = AA131F7328B475BF00D00E6E /* senao.app */;
@@ -368,6 +379,7 @@
 				AA48D7CB28B5D8600067F1FE /* XCRemoteSwiftPackageReference "Alamofire" */,
 				AA8FF17328B624E9001CCA38 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				AA8FF18128B62FDB001CCA38 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				AA8FF19628B754D1001CCA38 /* XCRemoteSwiftPackageReference "MJRefresh" */,
 			);
 			productRefGroup = AA131F7428B475BF00D00E6E /* Products */;
 			projectDirPath = "";
@@ -415,9 +427,9 @@
 				AA8FF18B28B63127001CCA38 /* ProductInfoCell.swift in Sources */,
 				AA8FF15F28B61E78001CCA38 /* ResDemoData.swift in Sources */,
 				AA8FF16228B61FBA001CCA38 /* DebugTool.swift in Sources */,
-				AA131F7B28B475BF00D00E6E /* ViewController.swift in Sources */,
 				AA8FF17028B622F7001CCA38 /* ProductInfoManager.swift in Sources */,
 				AA8FF16728B62016001CCA38 /* AlamofireTool.swift in Sources */,
+				AA8FF19228B722A5001CCA38 /* String+NumberFormatter.swift in Sources */,
 				AA131F7728B475BF00D00E6E /* AppDelegate.swift in Sources */,
 				AA8FF16D28B620DF001CCA38 /* ModelHttpAPI+DemoData.swift in Sources */,
 				AA8FF16A28B62059001CCA38 /* ModelHttpAPI.swift in Sources */,
@@ -800,6 +812,14 @@
 				minimumVersion = 6.5.0;
 			};
 		};
+		AA8FF19628B754D1001CCA38 /* XCRemoteSwiftPackageReference "MJRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoderMJLee/MJRefresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -827,6 +847,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA8FF18128B62FDB001CCA38 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		AA8FF19728B754D1001CCA38 /* MJRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA8FF19628B754D1001CCA38 /* XCRemoteSwiftPackageReference "MJRefresh" */;
+			productName = MJRefresh;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
